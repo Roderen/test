@@ -1,0 +1,234 @@
+@import "fonts.css";
+
+/*Обнуление стилей
+============================================*/
+* {
+	box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+}
+
+ul, li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+input {
+	padding: 0;
+	border: 0;
+	border-width: 0;
+}
+
+body, html {
+	background-color: #100f0f;
+}
+
+.inner {
+	max-width: 1120px;
+	margin: 0 auto;
+}
+
+/*Header*/
+.header {
+	padding-top: 25px;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 10;
+}
+
+.header__inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header__number {
+	font-family: Calibri Bold;
+	font-size: 36px;
+	color: #b85700;
+}
+
+.header-logo {
+	width: 240px;
+	height: 83px;
+}
+
+.logo-img {
+	max-width: 100%;
+}
+
+.header-info {
+	display: flex;
+	align-items: center;
+	font-family: Calibri Regular;
+	font-size: 14px;
+}
+
+.header-buttons {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	color: #fff;
+	width: 80px;
+	margin-right: 80px;
+}
+
+.btn-log {
+	padding: 5px 0;
+	border-radius: 8px;
+	background-color: #b84500;
+	color: #fff;
+}
+
+.btn-sign {
+	margin-top: 12px;
+	color: #fff;
+}
+
+.header-basket {
+	display: flex;
+	align-items: center;
+}
+
+.basket-img {
+	margin-right: 10px;
+}
+
+.basket-title {
+	color: #b84500;
+}
+
+.header__menu {
+	font-family: Calibri Regular;
+	font-weight: normal;
+	font-size: 16px;
+	margin-top: 35px;
+	padding: 16px 0 10px 0;
+	display: flex;
+	align-items: center;
+	position: relative;
+	z-index: 2;
+}
+
+.header__menu:before {
+	content: '';
+	display: block; 
+  	border-top: solid 1px;
+  	border-image-slice: 1;
+  	border-image-source: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(150, 40, 27, 1) 20% 80%, rgba(255, 255, 255, 0) 100%);
+	width: 100%;
+	height: 1px;
+	position: absolute;
+	top: 0;
+}
+
+.header__menu:after {
+	content: '';
+	display: block;
+  	border-bottom: solid 1px;
+  	border-image-slice: 1;
+  	border-image-source: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(150, 40, 27, 1) 20% 80%, rgba(255, 255, 255, 0) 100%);
+	width: 100%;
+	height: 1px;
+	position: absolute;
+	bottom: 0;
+}
+.catalog-link {
+	display: flex;
+	align-items: center;
+	margin-right: 45px;
+	background-color: #b84500;
+	border-radius: 10px;
+	padding: 11px 16px 11px 12px;
+	color: #f8f8f8;
+	cursor: pointer;
+}
+
+.catalog-items {
+	width: 19px;
+	height: 13px;
+	margin-right: 11px;
+}
+
+.catalog-item {
+	background-color: #fff;
+	width: 19px;
+	height: 2px;
+	border-radius: 3px;
+}
+
+.catalog-item:not(:last-child) {
+	margin-bottom: 3px;
+}
+
+.header__list {
+	display: flex;
+	align-items: center;
+}
+
+.item__link {
+	color: #f8f8f8;
+}
+
+.header__item:not(:last-child) {
+	margin-right: 40px;
+}
+
+.social {
+	margin-left: auto;
+}
+
+.social__link:first-child {
+	margin-right: 17px;
+}
+/*End Header*/
+
+/*Intro*/
+
+.intro {
+	color: #f5fbfa;
+	font-size: 80px;
+}
+
+.intro__img:before {
+	content: '';
+	display: block;
+	background-image: url('../img/intro/1.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+    width: 100%;
+    height: 100vh;
+	position: absolute;
+	top: 10px;
+	left: 0;
+}
+
+.intro__img:after {
+	content: '';
+	display: block;
+	background-image: url('../img/intro/2.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+    width: 100%;
+    height: 100vh;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.intro__inner {
+	margin: 700px auto;
+}
+/*End Intro*/
