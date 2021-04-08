@@ -1,13 +1,24 @@
-const swiper = new Swiper('.swiper-container', {
-  slidesPerView: 7,
-  slidesPerColumn: 1,
-  slidesPerView: 'auto',
-  spaceBetween: 50,
-  loop: true,
+$('.swiper-wrapper').slick({
+  infinite: true,
+  slidesToShow: 7,
+  slidesToScroll: 1,
+  variableWidth: true,
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-mybutton-next',
-    prevEl: '.swiper-mybutton-prev',
-  }
+  nextArrow: document.querySelector('.swiper-mybutton-next'),
+  prevArrow: document.querySelector('.swiper-mybutton-prev'),
+
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 5
+      }
+    },
+    {
+      breakpoint: 960,
+      settings: {
+        slidesToShow: 3
+      }
+    }
+  ]
 });
