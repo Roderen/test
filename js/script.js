@@ -13,7 +13,13 @@ function close() {
 	document.querySelector('.close').addEventListener('click', () => {
 		let x = document.querySelector('.burger__nav');
 		x.classList.remove('burger__nav-active');
+		setTimeout(() => overflow(), 800);
 	});
+}
+
+function overflow() {
+	let y = document.querySelector('.header');
+	y.style.overflow = 'hidden';
 }
 
 close();
@@ -21,9 +27,11 @@ close();
 function open() {
 	document.querySelector('.burger__btn').addEventListener('click', () => {
 		let x = document.querySelector('.burger__nav');
+		let y = document.querySelector('.header');
 		if (x.classList.contains('.burger__nav-active')) {
 			x.classList.remove('burger__nav-active')
 		} else {
+			y.style.overflow = 'visible';
 			x.classList.add('burger__nav-active')
 		}
 	});

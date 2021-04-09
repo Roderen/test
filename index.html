@@ -16,7 +16,7 @@
 	    DG.then(function () {
 	        map = DG.map('map', {
 	            center: [55.785044, 38.424711],
-	            zoom: 13,
+	            zoom: 12,
 	            scrollWheelZoom: false,
 	            zoomControl: false,
 	            fullscreenControl: false,
@@ -45,8 +45,9 @@
 
 </head>
 <body>
-
-<nav class="burger__nav">
+	
+<header class="header">
+<div class="burger__nav">
 	<div class="close">
 		<div class="close-item"></div>
 		<div class="close-item"></div>
@@ -58,9 +59,13 @@
 		<li class="burger__item"><a href="#" class="burger__link">Гарантии</a></li>
 		<li class="burger__item"><a href="#" class="burger__link">Контакты</a></li>
 	</ul>
-</nav>
-	
-<header class="header">
+	<a href="tel:88002222773" class="burger__number">8 (800) 2222-77-3</a>
+	<div class="burger-log-sign">
+		<a href="#" class="burger-log">Вход</a>
+		<a href="#" class="burger-sign">Регистрация</a>
+	</div>
+</div>
+
 	<div class="header__inner inner">
 		<a href="tel:88002222773" class="header__number">8 (800) 2222-77-3</a>
 		<a href="#" class="header-logo">
@@ -75,11 +80,11 @@
 				<img src="img/header/basket.png" alt="" class="basket-img">
 				<span class="basket-title">Корзина</span>
 			</a>
-		</div>
-		<div class="burger__btn">
-			<div class="btn__item"></div>
-			<div class="btn__item"></div>
-			<div class="btn__item"></div>
+			<div class="burger__btn">
+				<div class="btn__item"></div>
+				<div class="btn__item"></div>
+				<div class="btn__item"></div>
+			</div>
 		</div>
 	</div>
 
