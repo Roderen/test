@@ -682,7 +682,6 @@ body {
 /*Footer*/
 
 .footer {
-	padding: 0 15px;
 	position: relative;
 	background-color: #1f150c;
 	min-height: 428px;
@@ -826,7 +825,11 @@ body {
 /*End Footer*/
 
 
-
+@media screen and (min-width: 1920px) {
+	.intro__img {
+		width: initial;
+	}
+}
 
 @media screen and (max-width: 1440px) {
 	.intro__img {
@@ -894,6 +897,10 @@ body {
 
 	.location__item:first-child {
 		margin-bottom: 15px;
+	}
+
+	.footer {
+		padding: 0 15px;
 	}
 }
 
